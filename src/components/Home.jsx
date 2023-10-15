@@ -8,9 +8,9 @@ const Home = () => {
   return (
     <div name="home" className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>
       
-      <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
+      <div className='max-w-screen-lg mx-auto flex flex-col-reverse items-center justify-center h-full px-4 md:flex-row'>
 
-        <div className='flex flex-col justify-center'>
+        <div className='flex flex-col justify-center items-center text-center md:items-start md:text-start'>
             <h2 className='text-4xl sm:text-7xl font-bold text-white'>I am a Software Engineer</h2>
 
             <p className='text-gray-500 py-4'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias maiores mollitia consequuntur, soluta voluptas quae cumque sapiente, numquam delectus nemo possimus nihil et? Repellendus, sed praesentium eos quo doloribus vitae?</p>
@@ -30,7 +30,7 @@ const Home = () => {
         </div>
 
         <div className='py-8 mx-auto w-2/3 md:w-full'>
-            <img src={ProfileImage} alt="profile" className='rounded-2xl  ' />
+            <img src={ProfileImage} alt="profile" className='rounded-2xl animate-blob border-4 border-gray-400 ' />
         </div>
 
       </div>
