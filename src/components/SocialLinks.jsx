@@ -22,7 +22,7 @@ const SocialLinks = () => {
             id: 3,
             child: <><span>Resume </span>
                 <BsPersonLinesFill size={30} /></>,
-            href: "https://drive.google.com/file/d/1-2BBtMrXM6BqsJK_t1Z9HibLMFikqSHV/view?usp=sharing",
+            href: "https://drive.google.com/file/d/1dxBhGeSin6TtmrK0kNfK_8Vrv3xdudXP/view?usp=drive_link",
             style:"rounded-br-md"
         },
 
