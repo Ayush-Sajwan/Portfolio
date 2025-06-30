@@ -1,81 +1,51 @@
-import React from 'react';
-import html from '../assets/html.png';
-import css from '../assets/css.png';
-import js from '../assets/js.png';
-import reactImage from '../assets/react.png';
-import mongo from '../assets/mongo.png';
-import java from '../assets/java.png';
+import React from "react";
 
-export default function Components() {
-    const projects = [
-        {
-            id: 1,
-            src: html,
-            lang:"HTML",
-            style:"shadow-[#f77845]"
-            
-        },
-        {
-            id: 2,
-            src: css,
-            lang:"CSS",
-            style:"shadow-[#3c87f0]"
-        },
-        {
-            id: 3,
-            src: js,
-            lang:"JavaScript",
-            style:"shadow-[#f0e43c]"
-        },
-        {
-            id: 4,
-            src: reactImage,
-            lang:"React",
-            style:"shadow-[#07a4ed]"
-        },
-        {
-            id: 5,
-            src: mongo,
-            lang:"MongoDB",
-            style:"shadow-[#04ba19]"
-        },
-        {
-            id: 6,
-            src: java,
-            lang:"Java",
-            style:"shadow-[#f27516]"
-        }
+export default function About() {
+  const exp = [
+    {
+      id: 1,
+      role: "Technical Consultant",
+      company: "Oracle Financial Services Software",
+      date: "Jun 2024 - Present ",
+      achieve: [
+        "Developed customer account creation screens in Oracle FLEXCUBE using Java, JavaScript, and PL/SQL, supporting over 5 account types.",
+        "Migrated 200K+ transaction records from legacy systems with 100% data accuracy using optimized PL/SQL scripting.",
+        "Customized 15+ SOAP endpoints to enable feature enhancements and reduce integration effort by 30%.",
+        "Collaborated in an Agile team to deliver high-impact improvements with smooth production deployment.",
+        "Engaged in peer code reviews and troubleshooting of customer-reported issues, contributing to client satisfaction.",
+      ],
+    },
+  ];
 
-    ];
-
-
-    return (
-        <div name="experience" className='w-full md:h-screen bg-gradient-to-b from-gray-800 to-black text-white'>
-
-            <div className='max-w-screen-lg w-full h-full flex flex-col justify-center mx-auto p-4 '>
-
-                <div className=''>
-                    <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Experience</p>
-                    <p className='py-6'>These are the technologies that I have worked with.....</p>
-                </div>
-
-                <div className='grid w-9/10  text-center sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
-
-                    {
-                        projects.map(({ id, src ,lang, style }) => {
-                            return (
-                                <div key={id} className={"py-2 rounded-lg shadow-md "+style}>
-                                    <img className='w-20 h-3/5 mx-auto' src={src} alt="pimage" />
-
-                                    <p className='mt-4 h-2/5 text-2xl' >{lang}</p>
-                                </div>
-                            );
-                        })
-                    }
-
-                </div>
-
-            </div>
+  return (
+    <div
+      name="experience"
+      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+    >
+      <div className="max-w-screen-lg w-full h-full justify-center flex flex-col mx-auto p-4">
+        <div className="pb-6">
+          <p className="text-4xl mb-8 font-bold inline border-b-4 border-gray-500">
+            Experience
+          </p>
         </div>
-    )
+
+        {exp.map((e) => {
+          return (
+            <div key={e.id} className="text-gray-200  mb-8 inline py-6">
+              <div className="text-3xl py-2">{e.role}</div>
+              <div className="text-2xl font-thin italic py-1">
+                {` ${e.company} ( ${e.date} )`}
+              </div>
+
+              <ul class="list-disc pl-10">
+                {e.achieve.map((a) => {
+                  return <li>{a}</li>;
+                })}
+              </ul>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
 }

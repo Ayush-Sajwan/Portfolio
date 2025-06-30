@@ -9,15 +9,15 @@ function Navbar() {
 
      const links=[
         {id:1,link:'home'},
-        {id:2,link:'about'},
+        {id:2,link:'experience'},
         {id:3,link:'projects'},
-        {id:4,link:'experience'},
+        {id:4,link:'technologies'},
         {id:5,link:'contact'}
      ]
   return (
     <div className='flex justify-between items-center w-full h-20 px-4 text-white bg-[#090617] fixed'>
     <div>
-        <h1 className='text-5xl ml-2 italic font-thin'>Ayush</h1>
+        <h1 className='text-5xl ml-2 italic font-medium'>Ayush</h1>
     </div>
       
       <ul className='hidden md:flex'>
@@ -25,7 +25,8 @@ function Navbar() {
       {links.map(({id,link})=>{
 
         return(
-            <li  key={id} className='mx-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200'>
+            <li  key={id} className='mx-4 cursor-pointer capitalize font-medium text-gray-500 
+            hover:scale-110 hover:text-gray-200 duration-200'>
             <Link to={link} smooth duration={400}>{link}</Link>
             </li>
         );

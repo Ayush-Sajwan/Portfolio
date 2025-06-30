@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { SiLeetcode } from "react-icons/si";
 import { BsPersonLinesFill } from "react-icons/bs";
 
 const SocialLinks = () => {
@@ -23,6 +24,13 @@ const SocialLinks = () => {
             child: <><span>Resume </span>
                 <BsPersonLinesFill size={30} /></>,
             href: "https://drive.google.com/file/d/1dxBhGeSin6TtmrK0kNfK_8Vrv3xdudXP/view?usp=drive_link",
+            
+        },
+        {
+            id: 4,
+            child: <><span>LeetCode </span>
+                <SiLeetcode size={30} /></>,
+            href: "https://leetcode.com/u/Ayush_Sajwan/",
             style:"rounded-br-md"
         },
 
