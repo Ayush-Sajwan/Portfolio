@@ -65,7 +65,7 @@ export default function Components() {
 
 
     return (
-        <div name="technologies" className='w-full md:pt-20 bg-gradient-to-b from-gray-800 to-black text-white'>
+        <div name="technologies" className='w-full pt-20 bg-gradient-to-b from-gray-800 to-black text-white'>
 
             <div className='max-w-screen-lg w-full h-full flex flex-col justify-center mx-auto p-4 '>
 

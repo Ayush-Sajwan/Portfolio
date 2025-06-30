@@ -42,7 +42,7 @@ export default function Projects() {
 
 
     return (
-        <div name="projects" className='w-full md:pt-20 bg-gradient-to-b from-black to-gray-800 text-white'>
+        <div name="projects" className='w-full pt-20 bg-gradient-to-b from-black to-gray-800 text-white'>
 
             <div className='max-w-screen-lg w-full h-full flex flex-col justify-center mx-auto p-4 '>
 
