@@ -20,7 +20,7 @@ export default function About() {
   return (
     <div
       name="experience"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full pt-20 h-screen bg-gradient-to-b from-gray-800 to-black text-white"
     >
       <div className="max-w-screen-lg w-full h-full justify-center flex flex-col mx-auto p-4">
         <div className="pb-6">
