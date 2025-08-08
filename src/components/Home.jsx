@@ -20,7 +20,7 @@ const Home = () => {
             <p className='text-gray-500 py-4 '>{intro}</p>
 
             <div className='hidden md:flex'>
-              <Link to='projects' smooth duration={500}>
+              <Link to='projects' smooth={true} duration={500}>
                 <button className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer
                   hover:bg-gradient-to-l hover:duration-700'>
                     Portfolio
@@ -33,7 +33,7 @@ const Home = () => {
 
             
             <div className='md:hidden'>
-              <a href='https://drive.google.com/file/d/1dxBhGeSin6TtmrK0kNfK_8Vrv3xdudXP/view?usp=drive_link' smooth duration={500}>
+              <a href='https://drive.google.com/file/d/1dxBhGeSin6TtmrK0kNfK_8Vrv3xdudXP/view?usp=drive_link' duration={500}>
                 <button className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer
                   hover:bg-gradient-to-l hover:duration-700'>
                     Resume

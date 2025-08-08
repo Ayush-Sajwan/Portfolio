@@ -8,7 +8,7 @@ import sql from '../assets/sql.png';
 import nodejs from '../assets/nodejs.png';
 import plsql from '../assets/plsql.png';
 
-export default function Components() {
+export default function Technologies() {
     const projects = [
         {
             id: 1,

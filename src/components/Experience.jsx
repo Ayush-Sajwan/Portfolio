@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function About() {
+export default function Experience() {
   const exp = [
     {
       id: 1,
@@ -37,9 +37,9 @@ export default function About() {
                 {` ${e.company} ( ${e.date} )`}
               </div>
 
-              <ul class="list-disc pl-10">
-                {e.achieve.map((a) => {
-                  return <li>{a}</li>;
+              <ul className="list-disc pl-10">
+                {e.achieve.map((a,index) => {
+                  return <li key={index}>{a}</li>;
                 })}
               </ul>
             </div>
