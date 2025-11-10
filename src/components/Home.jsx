@@ -33,7 +33,7 @@ const Home = () => {
 
             
             <div className='md:hidden'>
-              <a href='https://drive.google.com/file/d/1dxBhGeSin6TtmrK0kNfK_8Vrv3xdudXP/view?usp=drive_link' duration={500}>
+              <a href='https://drive.google.com/file/d/11Xs46hBchZ_g6UOZa6dY7jocA4Vvmmwa/view?usp=sharing' duration={500}>
                 <button className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer
                   hover:bg-gradient-to-l hover:duration-700'>
                     Resume
