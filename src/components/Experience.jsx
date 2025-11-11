@@ -4,16 +4,17 @@ export default function Experience() {
   const exp = [
     {
       id: 1,
-      role: "Technical Consultant",
+      role: "Software Developer",
       company: "Oracle Financial Services Software",
       date: "Jun 2024 - Present ",
       achieve: [
-        "Developed customer account creation screens in Oracle FLEXCUBE using Java, JavaScript, and PL/SQL, supporting over 5 account types.",
-        "Migrated 200K+ transaction records from legacy systems with 100% data accuracy using optimized PL/SQL scripting.",
-        "Customized 15+ SOAP endpoints to enable feature enhancements and reduce integration effort by 30%.",
-        "Collaborated in an Agile team to deliver high-impact improvements with smooth production deployment.",
-        "Engaged in peer code reviews and troubleshooting of customer-reported issues, contributing to client satisfaction.",
-      ],
+    "Developed and integrated a secure interface between FLEXCUBE Corporate (FCC) and external vendor systems for Bank Danamon Indonesia using Java and PL/SQL, enabling third-party applications to perform core banking operations in FCC through APIs.",
+    "Implemented support for MTx99 SWIFT message processing in FCC using PL/SQL and internal integration frameworks, ensuring compliance with SWIFT international standards.",
+    "Automated End-of-Day (EOD) DB batch monitoring using Java, PL/SQL, and scheduled jobs, enabling real-time email alerts on batch execution status and reducing manual operational effort during daily processing.",
+    "Created and customized screens in the FLEXCUBE CASA module using Java, JavaScript, and PL/SQL for account creation and GL blocking, ensuring correct business rule integration.",
+    "Led the migration of 200K+ transaction records from legacy FLEXCUBE systems to the latest release through well-structured PL/SQL migration and reconciliation scripts, ensuring 100% data integrity across all records.",
+    "Diagnosed production defects via log and workflow analysis, and deployed preventive Java and PL/SQL enhancements in FLEXCUBE and FCC to improve reliability and minimize recurring issues."
+],
     },
   ];
 
