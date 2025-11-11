@@ -15,7 +15,7 @@ const Home = () => {
       <div className='max-w-screen-lg mx-auto flex flex-col-reverse items-center justify-center h-full px-4 md:flex-row'>
 
         <div className='flex flex-col justify-center items-center text-center md:items-start md:text-start md:w-4/6 md:pr-6'>
-            <h2 className='text-3xl sm:text-7xl font-bold text-white md:pt-10'>I am a Software Engineer</h2>
+            <h2 className='text-3xl md:text-7xl font-bold text-white md:pt-10'>I am a Software Engineer</h2>
 
             <p className='text-gray-500 py-4 '>{intro}</p>
 
@@ -46,7 +46,7 @@ const Home = () => {
 
         </div>
 
-        <div className='py-8 mx-auto w-2/3 md:w-2/6 '>
+        <div className='py-8 mx-auto w-2/3 sm:w-2/4 md:w-2/6 '>
             <img src={ProfileImage} alt="profile" className='rounded-2xl animate-blob border-4 border-gray-400 shadow-[0_0_30px_rgba(59,130,246,0.7)] ' />
         </div>
 
