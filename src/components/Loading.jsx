@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import gif from "../assets/server.gif";
 
 export default function Loading() {
